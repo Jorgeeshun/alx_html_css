@@ -143,7 +143,7 @@ ul {
 .purple-content {
     max-width: 800px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
@@ -153,11 +153,16 @@ ul {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #fff;
+}
+
+.purple-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .purple-text p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
     font-style: italic;
 }
