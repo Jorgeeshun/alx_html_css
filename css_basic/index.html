@@ -8,81 +8,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="base.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>Base Index</title>
+    <title>George Prince Ato K. Eshun - Portfolio</title>
+    <!-- Google Fonts - Inter for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <!-- The class "works_on_smartphone" is added to the body tag as per the instructions. -->
 <body class="works_on_smartphone">
     <header>
-        <p><img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" width="100" alt="logo_07"></p>
-        <h1>Welcome to the Index Page</h1>
+        <p><img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" width="100" alt="ALX Logo"></p>
+        <h1>Welcome to My Digital Space</h1>
         <nav>
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+                <!-- Logo as a unicode character, with class="logo" -->
+                <p><li class="logo">&#128187;</li></p> <!-- Unicode for a computer monitor -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 <main>
     <article>
-        <div>
-            <p><a href="tweets.html">Check out my tweets</a></p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm George Prince Ato K. Eshun, a passionate and dedicated aspiring software engineer with a keen interest in building impactful web applications. I thrive on solving complex problems and continuously learning new technologies. My journey in tech is driven by curiosity and a desire to create user-friendly and efficient digital solutions.</p>
+            <p>This page serves as a glimpse into my skills, projects, and thoughts. Feel free to explore and connect!</p>
+            <p class="cta-link"><a href="tweets.html">Check out my latest thoughts on Twitter!</a></p>
+        </section>
 
-            <div>
-                <h1>First Heading</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <section id="skills">
+            <h2>My Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Web Development</h3>
+                    <p>Proficient in HTML, CSS, JavaScript, and modern front-end frameworks.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Problem Solving</h3>
+                    <p>A strong analytical mind, adept at breaking down challenges and finding creative solutions.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Version Control</h3>
+                    <p>Experienced with Git and GitHub for collaborative development.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Continuous Learning</h3>
+                    <p>Always eager to learn new languages, tools, and best practices.</p>
+                </div>
             </div>
-            <div>
-                <h2>Second Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Recent Projects</h2>
+            <p>Here are some of the projects I've been working on. Each project represents a step in my learning journey and a practical application of my skills.</p>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Project Alpha</h3>
+                    <p>A responsive web application built with HTML, CSS, and JavaScript, focusing on user interaction.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Project Beta</h3>
+                    <p>Explored data visualization techniques using D3.js to present complex datasets clearly.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Project Gamma</h3>
+                    <p>Developed a simple game using vanilla JavaScript to enhance logic and DOM manipulation skills.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
-            <div>
-                <h3>Third Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div>
-                <h4>Fourth Heading</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Country</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>25</td>
-                    <td>USA</td>
-                </tr>
-                <tr>
-                    <td>Emily</td>
-                    <td>28</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Michael</td>
-                    <td>32</td>
-                    <td>Australia</td>
-                </tr>
-                <tr>
-                    <td>Sophia</td>
-                    <td>21</td>
-                    <td>Uk</td>
-                </tr>
-            </tbody>
-        </table>
+        </section>
+
+        <section id="experience">
+            <h2>Experience Snapshot</h2>
+            <p>A brief overview of my professional and educational journey.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Role/Program</th>
+                        <th>Duration</th>
+                        <th>Focus Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ALX Software Engineering</td>
+                        <td>2023 - Present</td>
+                        <td>Full-Stack Web Development, Algorithms</td>
+                    </tr>
+                    <tr>
+                        <td>Internship XYZ</td>
+                        <td>Jan - Apr 2024</td>
+                        <td>Front-End Development, UI/UX</td>
+                    </tr>
+                    <tr>
+                        <td>Volunteer Tech Support</td>
+                        <td>2022 - 2023</td>
+                        <td>Troubleshooting, User Assistance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </article>
     <aside>
-        <p>placeholder to add comment thread later</p>
+        <section id="contact">
+            <h2>Connect With Me</h2>
+            <p>I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out!</p>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+        <section class="comment-placeholder">
+            <h3>Comments Section</h3>
+            <p>This is a placeholder for a future comment thread or testimonials.</p>
+            <p>Stay tuned for more interactive features!</p>
+        </section>
     </aside>                            
 </main>
 <footer>
-    <p>Made by George Prince Ato K. Eshun - <a href="https://github.com/Jorgeeshun" target="_blank"> here</a></p>
+    <p>Made with &hearts; by George Prince Ato K. Eshun - <a href="https://github.com/Jorgeeshun" target="_blank">GitHub Profile</a></p>
 </footer>
 </body>
 </html>
