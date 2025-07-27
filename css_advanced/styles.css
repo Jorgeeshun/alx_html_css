@@ -89,9 +89,16 @@ ul {
     margin-bottom: 40px;
 }
 
-.hero-subtext p {
-    font-size: 1.2rem;
+.hero-subtext button {
+    font-size: 0.8rem;
     font-weight: 300;
+    align-self: center;
+}
+
+.mood a{
+    display: flexbox;
+    padding: 240px 50px 0px 50px;
+    
 }
 
 .prof-list {
@@ -187,7 +194,7 @@ ul {
 
 .tutorial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -364,17 +371,17 @@ ul {
 
 .footer-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 500px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-content .logo {
     display: flex;
-    align-items: center;
+    align-items: left;
     font-size: 1.5rem;
     font-weight: bold;
 }
