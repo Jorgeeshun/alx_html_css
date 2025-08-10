@@ -134,6 +134,16 @@ body {
     gap: 2rem;
 }
 
+.features {
+    display: flex;
+    justify-content: center;   /* center row */
+    align-items: flex-start;   /* align from top */
+    gap: 4rem;
+    flex-wrap: wrap; display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
 .feature {
     text-align: center;
 }

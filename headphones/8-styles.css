@@ -112,7 +112,6 @@ body {
     padding: 4rem 1rem;
     background-color: var(--primary-color);
     color: var(--bg-dark);
-    
 }
 
 .what-we-do h2 {
@@ -128,6 +127,12 @@ body {
     line-height: 1.6;
 }
 
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
 
 .features {
     display: flex;
@@ -242,9 +247,6 @@ body {
   text-align: center;
 
 }
-
-
-
 
 
 /* Contact Us Section */
@@ -371,6 +373,92 @@ body {
   text-align: center;
 }
 
+
+/* ======= Animations ======= */
+
+/* Smooth scaling on hover */
+.animate-scale {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.animate-scale:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Continuous bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-bounce {
+  animation: bounce 2s infinite ease-in-out;
+}
+
+/* Rotation on hover */
+.animate-rotate {
+  transition: transform 0.4s ease;
+}
+.animate-rotate:hover {
+  transform: rotate(10deg);
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Mobile menu styles */
+@media (max-width: 480px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
 
 /* Mobile adjustments */
