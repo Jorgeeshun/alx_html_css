@@ -1,0 +1,283 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Spin-Cycle-OT';
+  src: url('fonts/Spin-Cycle-OT.woff2') format('woff2'),
+       url('fonts/Spin-Cycle-OT.woff') format('woff'),
+       url('fonts/Spin-Cycle-OT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #ff4c60;
+    --bg-dark: #0b0e14;
+    --heading-font: 'Spin-Cycle-OT', sans-serif;
+    --body-font: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-dark);
+    color: var(--primary-color);
+}
+
+.site-header {
+    background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    font-family: var(--body-font);
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--body-font);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: var(--body-font);
+}
+
+.description {
+    padding-top: 5%;
+    width: 60%;
+    margin-left: 20%;
+    font-family: var(--body-font);
+}
+
+.btn {
+    background-color: var(--accent-color);
+    padding: 0.8rem 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background 0.3s;
+    font-family: var(--heading-font);
+}
+
+.btn:hover {
+    background-color: #e63a50;
+}
+
+.what-we-do {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
+}
+
+.what-we-do h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.what-we-do p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature .icon {
+    font-size: 3rem;
+    color: var(--bg-dark);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Our Results Section */
+.our-results {
+     background: url('images/headphones_hero_2.jpg') center/cover no-repeat;
+    color: var(--text-color);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.our-results p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+
+
+
+.stat .circle span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat p {
+    font-size: 0.9rem;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: var(--bg-dark);
+}
+
+.contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-us p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--font-body);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+.contact_btn{
+    max-width: 150px;
+    align-self: center;
+}
+
+.contact-form button {
+    background-color: var(--accent-color);
+    padding: 0.8rem 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background 0.3s;
+    font-family: var(--heading-font);
+    border-color: var(--accent-color);
+}
+
+
+.contact-form button:hover {
+    opacity: 0.9;
+    background-color: #e63a50;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .nav-links { 
+        display: none; /* Hide the links on mobile by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Position it below the header */
+        right: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
