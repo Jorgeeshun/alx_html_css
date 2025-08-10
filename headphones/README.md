@@ -48,3 +48,18 @@ This project demonstrates how to **build a modern web page the right way**, by a
 ---
 
 ## 📂 File Structure
+alx_html_css/
+└── headphones/
+├── 0-index.html # Hero/Header only
+├── 1-index.html # Adds "What we do…" section
+├── 2-index.html # Adds "Our results" section
+├── 3-index.html # Adds Contact form
+├── 4-index.html # Adds Footer
+├── 6-index.html # Draws pentagons with CSS
+├── 7-index.html # Adds animations
+├── 8-index.html # Adds hamburger menu
+├── styles.css # Styles for all pages
+├── script.js # Hamburger menu JS
+├── images/ # Project images
+├── fonts/ # Custom fonts
+└── holberton_school-icon/ # Icon font files
