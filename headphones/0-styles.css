@@ -1,0 +1,118 @@
+/* Reset */
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Spin-Cycle-OT';
+    src: url('path-to-your-font-files/Spin-Cycle-OT.woff2') format('woff2'),
+        url('path-to-your-font-files/Spin-Cycle-OT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #ff4c60;
+    --bg-dark: #0b0e14;
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--primary-color);
+}
+
+.site-header {
+    background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    font-family: 'Source sans Pro', sans-serif;
+    flex-direction: row;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.description {
+    padding-top: 5%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    padding: 0.8rem 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e63a50;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .nav-links { 
+        display: none; /* Hide the links on mobile by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Position it below the header */
+        right: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
