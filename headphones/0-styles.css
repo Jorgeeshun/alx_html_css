@@ -1,12 +1,13 @@
 /* Reset */
- @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 @font-face {
-    font-family: 'Spin-Cycle-OT';
-    src: url('path-to-your-font-files/Spin-Cycle-OT.woff2') format('woff2'),
-        url('path-to-your-font-files/Spin-Cycle-OT.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
+  font-family: 'Spin-Cycle-OT';
+  src: url('fonts/Spin-Cycle-OT.woff2') format('woff2'),
+       url('fonts/Spin-Cycle-OT.woff') format('woff'),
+       url('fonts/Spin-Cycle-OT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
     margin: 0;
@@ -18,11 +19,12 @@
     --primary-color: #ffffff;
     --accent-color: #ff4c60;
     --bg-dark: #0b0e14;
-    --font-family: 'Source Sans Pro', sans-serif;
+    --heading-font: 'Spin-Cycle-OT', sans-serif;
+    --body-font: 'Source Sans Pro', sans-serif;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: var(--body-font);
     background-color: var(--bg-dark);
     color: var(--primary-color);
 }
@@ -43,7 +45,7 @@ body {
 
 .logo {
     display: flex;
-    font-family: 'Source sans Pro', sans-serif;
+    font-family: var(--body-font);
     flex-direction: row;
     font-size: 1.5rem;
     font-weight: bold;
@@ -54,6 +56,7 @@ body {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    font-family: var(--body-font);
 }
 
 .nav-links a {
@@ -74,17 +77,20 @@ body {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: var(--heading-font);
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    font-family: var(--body-font);
 }
 
 .description {
     padding-top: 5%;
     width: 60%;
     margin-left: 20%;
+    font-family: var(--body-font);
 }
 
 .btn {
@@ -94,6 +100,7 @@ body {
     text-decoration: none;
     border-radius: 40px;
     transition: background 0.3s;
+    font-family: var(--heading-font);
 }
 
 .btn:hover {
