@@ -108,50 +108,52 @@ body {
 }
 
 .what-we-do {
-  text-align: center;
-  padding: 4rem 1rem;
-  background-color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--bg-dark);
 }
 
 .what-we-do h2 {
-  font-family: var(--heading-font);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: black;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .what-we-do p {
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  font-size: 1rem;
-  line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
+
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
 }
 
 .feature {
-  text-align: center;
+    text-align: center;
 }
 
 .feature .icon {
-  font-size: 3rem;
-  color: var(--primary-color);
-  display: inline-block;
-  margin-bottom: 1rem;
+    background-image: url(images/sound-frecuency.png);
+    font-size: 3rem;
+    color: var(--bg-dark);
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .feature h3 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 .feature p {
-  font-size: 0.9rem;
-  color: #555;
+    font-size: 0.9rem;
+    color: #555;
 }
 
 

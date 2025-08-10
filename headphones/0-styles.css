@@ -120,41 +120,6 @@ body {
   color: black;
 }
 
-.what-we-do p {
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-}
-
-.feature {
-  text-align: center;
-}
-
-.feature .icon {
-  font-size: 3rem;
-  color: var(--primary-color);
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-.feature h3 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.feature p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .nav-links { 
